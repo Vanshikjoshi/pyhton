@@ -23,9 +23,16 @@ while(num<=100):
 print(sum);
 """
 #------------------------------------------
+"""
 n=1
 num = int(input("Enter a number: "));
 print(f"The table of {num} is:");
 while(n<=10):
     print(f"{num} * {n} = {num*n}");
     n+=1;
+"""
+#for loop
+for i in range(1,11,2):
+    print(i);
+for n in range(10,0,-1):
+    print(n, end=" ");
