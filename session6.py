@@ -61,6 +61,8 @@ print(lst3)
 --------------------------------------------
 """
 # looping in list
+"""
+----------------------------------------------------
 fruit = ["Apple", "Mango", "Banana", "Grapes", "Blueberry"]
 i = 0
 while i < len(fruit):
@@ -73,3 +75,43 @@ print()
 
 for idx, val in enumerate(fruit):  # used when idx and value both are required
     print(f"Index: {idx} and valuse is : {val}")
+
+
+
+def new_lst(lst1, lst2):
+    new_lst = []
+    n = len(lst1)
+    for i in range(0, n):
+        total = lst1[i] + lst2[i]
+        new_lst.append(total)
+    return new_lst
+
+
+num1 = [6, 5, 3, 5, 6, 5, -6, 80]
+num2 = [5, 76, 8, 4, 56, 9, 46, 3]
+lst = new_lst(num1, num2)
+print(lst)
+---------------------------------------------------
+"""
+
+
+def is_sorted(lst):
+    n = len(lst)
+    sorted = True
+    for i in range(0, n):
+        if i == n - 1:
+            break
+        if lst[i] <= lst[i + 1]:
+            sorted = True
+        else:
+            sorted = False
+            break
+    return sorted
+
+
+nums = [3, 6, 8, 9, 9, 17, 18, 23, 45, 58, 79, 100]
+lst = is_sorted(nums)
+if lst == True:
+    print(f"Yes Sorted!")
+else:
+    print(f"Not sorted")
