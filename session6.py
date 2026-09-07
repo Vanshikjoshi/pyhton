@@ -91,10 +91,7 @@ num1 = [6, 5, 3, 5, 6, 5, -6, 80]
 num2 = [5, 76, 8, 4, 56, 9, 46, 3]
 lst = new_lst(num1, num2)
 print(lst)
----------------------------------------------------
-"""
-
-
+-----------------------------------------
 def is_sorted(lst):
     n = len(lst)
     sorted = True
@@ -115,3 +112,52 @@ if lst == True:
     print(f"Yes Sorted!")
 else:
     print(f"Not sorted")
+    ---------------------------------------------------
+"""
+# list methods
+"""
+-----------------------------------------
+#manipulating method
+fruits = ["apple", "Banana", "Grapes"]
+print(fruits)
+fruits.append("Orange")
+fruits.insert(1, "Kiwi")
+# adds at a paticular index;
+print(fruits)
+fruits.remove("Banana")
+# removes by value
+print(fruits)
+fruits.pop()
+# remove the last value by default
+print(fruits)
+fruits.pop(0)
+# remove element at index 0
+print(fruits)
+-----------------------------------------------
+"""
+# sorting,reversing,searching and counting methods
+"""
+-------------------------------------------
+num = [20, 40, 10, 30, 50]
+num.sort()
+print(num)
+num.sort(reverse=True)
+print(num)
+print(num.index(50))
+fruit = ["Apple", "Banana", "Orange", "Apple", "Payaya"]
+print(fruit.count("Apple"))
+--------------------------------------------
+"""
+# clearing and membership operators
+"""
+-----------------------------------------
+lst = [2, 34, 23, 56, 11, 67, 15]
+lst.clear()  # removes all elements;
+print(lst)
+nums = [2, 34, 23, 56, 11, 67, 15]
+print(5 in nums)  # returns Ture is exist else False
+print(34 in nums)
+print(10 not in nums)  # returns True is not rxist else False
+print(56 not in nums)
+-----------------------------------
+"""
