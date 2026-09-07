@@ -161,3 +161,27 @@ print(10 not in nums)  # returns True is not rxist else False
 print(56 not in nums)
 -----------------------------------
 """
+# practice questions
+"""
+-------------------------------------
+nums = [3, 1, 5, 11, 2]
+max = 0
+for i in nums:
+    if i > max:
+        max = i
+print(max)
+-----------------------------
+nums = [1, 2, 3, 4, 5]
+n = len(nums)
+for i in range(n // 2):
+    temp = nums[i]
+    nums[i] = nums[n - 1 - i]
+    nums[n - 1 - i] = temp
+print(nums)
+-----------------------
+lst1 = [1, 2, 3, 4]
+lst2 = [5, 6, 7, 8]
+lst3 = lst1 + lst2
+print(lst3)
+-----------------------
+"""
