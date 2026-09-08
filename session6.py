@@ -183,5 +183,49 @@ lst1 = [1, 2, 3, 4]
 lst2 = [5, 6, 7, 8]
 lst3 = lst1 + lst2
 print(lst3)
------------------------
+----------------------------------------------
+data = [10, 20, 30, 20, 10, 40, 50, 40]
+n = len(data)
+for i in range(0, n):
+    j = i + 1
+    while j < len(data):
+        if data[i] == data[j]:
+            data.pop(j)
+        else:
+            j += 1
+print(data)
+--------------------------------------
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even = []
+odd = []
+n = len(nums)
+for i in range(0, n):
+    if nums[i] % 2 == 0:
+        even.append(nums[i])
+    else:
+        odd.append(nums[i])
+print(even)
+print(odd)
+---------------------------------------------
 """
+# nested list
+"""
+---------------------------------------------
+marks = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+print(marks[2])
+print(marks[1][0])
+for i in range(0, 3):
+    for j in range(0, 3):
+        print(marks[i][j], end=" ")
+    print()
+# dynamic matrix
+mat = [[1, 2, 3, 4, 5], [3, 4, 5, 2, 1], [6, 7, 8, 9, 2], [4, 9, 2, 5, 3]]
+rows = len(mat)
+cols = len(mat[0])
+for i in range(0, rows):
+    for j in range(0, cols):
+        print(mat[i][j], end=" ")
+    print()
+=----------------------------------------
+"""
+# practice questions
