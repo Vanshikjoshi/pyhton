@@ -40,8 +40,25 @@ student.clear()  # remove all keys and values or emptied the dict
 print(student)
 del student  # deletes the student permanently from the memory
 -------------------------------------
-"""
 # membership operator
 student = {"name": "Vanshika Joshi", "age": 19, "roll no": 1170, "is-std": True}
 print("name" in student)
 print("marks" in student)
+-------------------------------------
+"""
+# dict_methods
+"""
+-----------------------------------
+marks = {"maths": 89, "science": 100, "comp": 80, "hindi": 99, "history": 78}
+print(marks.keys())
+print(marks.values())
+total = 0
+for k in marks.keys():
+    print(k, ":", marks[k], end=" ")
+    total += marks[k]
+print()
+print(f"Total marks is: {total}")
+------------------------------------------
+"""
+marks = {"maths": 89, "science": 100, "comp": 80, "hindi": 99, "history": 78}
+print(marks.items())
