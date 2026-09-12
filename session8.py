@@ -59,6 +59,22 @@ for k in marks.keys():
 print()
 print(f"Total marks is: {total}")
 ------------------------------------------
-"""
 marks = {"maths": 89, "science": 100, "comp": 80, "hindi": 99, "history": 78}
 print(marks.items())
+for i in marks.items():
+    print(i)
+    print(i[0])
+for sub, mark in marks.items():
+    print(sub, ":", mark)
+------------------------------------------
+#filtering
+marks = {"maths": 89, "science": 56, "comp": 80, "hindi": 99, "history": 78}
+for sub, mark in marks.items():
+    if mark >= 80:
+        print(f"{sub}: Execellent")
+    elif mark >= 60:
+        print(f"{sub}: Good")
+    else:
+        print(f"{sub}: need to improve!")
+-------------------------------------------------------
+"""
