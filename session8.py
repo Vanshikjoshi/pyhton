@@ -101,3 +101,16 @@ avg = total / len(score)
 print(f"Average is : {avg}")
 -------------------------------------------------------
 """
+# inbuilt-methods
+"""
+-------------------------------------------
+score = {"science": 78, "maths": 89, "hindi": 67, "english": 90}
+print(len(score))
+print(sum(score.values()))
+print(min(score.values()))
+print(max(score.values()))
+print(min(score))  # sorted alphabetically
+print(max(score))
+print(sorted(score))
+-------------------------------------------------------
+"""
