@@ -166,7 +166,6 @@ print("Sorted by marks:")
 for s in marks:
     print(s)
 --------------------------------------------------
-"""
 # dict comprehension
 squares = {}
 for i in range(1, 11):
@@ -183,3 +182,11 @@ subject = ["maths", "hindi", "english", "science"]
 marks = [83, 90, 78, 59]
 result = {s: m for s, m in zip(subject, marks)}
 print(result)
+--------------------------------------------------
+"""
+# practice questions-
+std = {"sci": 89, "maths": 78, "hindi": 98, "eng": 67, "comp": 90}
+maximum = max(std, key=lambda s: std[s])
+minimum = min(std, key=lambda s: std[s])
+print(f"minimum marks in {minimum}")
+print(maximum)
