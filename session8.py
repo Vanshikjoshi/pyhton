@@ -114,3 +114,72 @@ print(max(score))
 print(sorted(score))
 -------------------------------------------------------
 """
+# nested dict
+"""
+---------------------------------------------
+std = {
+    "101": {"name": "abc", "age": 21, "city": "haldwani"},
+    "102": {"name": "xyz", "age": 17, "city": "mumbai"},
+    "103": {"name": "uwv", "age": 28, "city": "jaipur"},
+}
+print(std["102"]["city"])
+print(std["101"]["name"])
+# adding new
+std["104"] = {"name": "pqr", "age": 25, "city": "banglore"}
+print(std["104"]["age"])
+# updating
+std["101"]["name"] = "Don"
+print(std["101"]["name"])
+# looping through nested dict
+for roll, info in std.items():
+    print(f"Roll {roll}: {info["name"]} from {info["city"]}")
+--------------------------------------------------
+"""
+# lis in dict
+"""
+----------------------------------------------------
+std = {
+    "name": "Rahul",
+    "age": 23,
+    "subjects": ["Maths", "Hindi", "English"],
+    "marks": [83, 93, 98],
+}
+print(std["subjects"])
+print(std["subjects"][1])
+for i in std["marks"]:
+    print(i)
+std["subjects"].append("Science")
+print(std["subjects"])
+std["marks"].append(87)
+print(std["marks"])
+print(sum(std["marks"]))
+--------------------------------------------------
+# sorting in nested data with lambda
+std = [
+    {"name": "Rahul", "marks": 85},
+    {"name": "Priya", "marks": 93},
+    {"name": "Karan", "marks": 78},
+    {"name": "Siya", "marks": 67}
+]
+marks = sorted(std, key=lambda s: s["marks"])
+print("Sorted by marks:")
+for s in marks:
+    print(s)
+--------------------------------------------------
+"""
+# dict comprehension
+squares = {}
+for i in range(1, 11):
+    squares[i] = i * i
+print(squares)
+# now using dict comprehension
+square = {i: i * i for i in range(1, 6)}
+print(square)
+marks = {"maths": 98, "hindi": 45, "english": 83, "science": 45}
+top = {sub: m for sub, m in marks.items() if m > 80}
+print(top)
+# creating dict from two list
+subject = ["maths", "hindi", "english", "science"]
+marks = [83, 90, 78, 59]
+result = {s: m for s, m in zip(subject, marks)}
+print(result)
