@@ -78,3 +78,26 @@ for sub, mark in marks.items():
         print(f"{sub}: need to improve!")
 -------------------------------------------------------
 """
+# practicing questions
+"""
+----------------------------------------
+std = {"name": "abc", "age": 20, "city": "haldwani", "marks": 79.8}
+for i in std:
+    print(i, end=" ")  # printing key
+-------------------------------------------------------
+score = {"science": 78, "maths": 89, "hindi": 67, "english": 90}
+n = score.get("maths")
+if n in score.values():
+    print(n)
+else:
+    print("NOt available")
+-------------------------------------------------------
+score = {"science": 78, "maths": 89, "hindi": 67, "english": 90}
+total = 0
+for i in score.values():
+    total += i
+print(f"Total is {total}")
+avg = total / len(score)
+print(f"Average is : {avg}")
+-------------------------------------------------------
+"""
