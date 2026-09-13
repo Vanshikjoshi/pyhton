@@ -45,6 +45,8 @@ print(f"Total vowels are: {count}")  # count vowels
 ----------------------------------------------
 """
 # string methods
+"""
+------------------------------------------
 text = "hello world from Python"
 print(text)
 print(text.upper())
@@ -69,3 +71,22 @@ print(sen.index("o"))  # return error if not found
 print(sen.find("l"))  # return -1 if not found
 print(sen.find("i"))
 print(sen.replace("World", "Earth"))
+-------------------------------------------------
+"""
+# splitting and joining funcitons- split()-break string into list and join()- combine list into string
+text = "Hello world, from python!"
+print(text.split())  # bydefault whitespce is separator
+print(text.split(","))
+print(text.split("o"))
+lst = ["v", "a", "n", "s", "h", "i", "k", "a"]
+print("".join(lst))
+print(type("".join(lst)))
+# stip method- remove whitespaces from both ends of string
+pythontext = " Hello world "
+print(pythontext.strip())
+# lstip-removes whitespace from left
+# rstip-removes whitespace from right
+url = "//https://www.code.com/"
+print(url.strip("/https:/"))
+print(url.lstrip("/"))
+print(url.rstrip("/"))
