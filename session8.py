@@ -154,17 +154,26 @@ std["marks"].append(87)
 print(std["marks"])
 print(sum(std["marks"]))
 --------------------------------------------------
+<<<<<<< HEAD
+=======
+"""
+>>>>>>> 5dce8c2 (learn about sets)
 # sorting in nested data with lambda
 std = [
     {"name": "Rahul", "marks": 85},
     {"name": "Priya", "marks": 93},
     {"name": "Karan", "marks": 78},
+<<<<<<< HEAD
     {"name": "Siya", "marks": 67}
+=======
+    {"name": "Siya", "marks": 67},
+>>>>>>> 5dce8c2 (learn about sets)
 ]
 marks = sorted(std, key=lambda s: s["marks"])
 print("Sorted by marks:")
 for s in marks:
     print(s)
+<<<<<<< HEAD
 --------------------------------------------------
 # dict comprehension
 squares = {}
@@ -190,3 +199,5 @@ maximum = max(std, key=lambda s: std[s])
 minimum = min(std, key=lambda s: std[s])
 print(f"minimum marks in {minimum}")
 print(maximum)
+=======
+>>>>>>> 5dce8c2 (learn about sets)
