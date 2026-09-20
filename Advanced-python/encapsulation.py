@@ -20,3 +20,23 @@ c1.deposit(-2)
 # in python it is not real security because we can still access the private members like-
 print(c1._Bank__balance)
 # even we have made the balance private but still we can access this ;
+
+
+# getter and Setter
+class Student:
+    def __inti__(self, name) -> None:
+        self._name = name
+
+    # getter
+    def get_name(self):
+        return self._name
+
+    # setter
+    def set_name(self, new_name: str):
+        self._name = new_name
+
+
+s1 = Student("Vanshika")
+print(s1.get_name())
+(s1.set_name("Radhika"))
+print(s1.get_name())
